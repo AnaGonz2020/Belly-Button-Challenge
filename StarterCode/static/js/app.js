@@ -11,18 +11,18 @@ d3.json(url).then(function(data) {
 
 // Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
   //Use sample_values as the values for the bar chart.
-  sampleValues = data.map(function (row){
+  sampleValues = data.samples.map(function (row){
     return row.sample_values
   });
   //Use otu_ids as the labels for the bar chart.
-  labelValues = data.map(function (label){
-    return label.otu_ids
+  labelValues = data.samples.map(function (label){
+    return label.otu_labels
   });
   //Use otu_labels as the hovertext for the chart.
 
 let trace1 = {
-  x: data.map(row => row.sample_values),
-  y: data.map(label => label.otu_ids),
+  x: data.samples.map(row => row.sample_values),
+  y: data.samples.map(label => label.otu_labels),
   type:"bar"
 };
 
@@ -36,4 +36,4 @@ let layout = {
 
 
 //Render the plot to the div tag with id "bar"
-Plotly.newplot("bar", traceData)
+Plotly.newplot("bar", traceData, layout)
