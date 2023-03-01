@@ -29,5 +29,11 @@ let trace1 = {
 //Data trace array 
 let traceData = [trace1];
 
+// Apply the group barmode to the layout
+let layout = {
+  title: "Top 10 OTUs"
+};
+
+
 //Render the plot to the div tag with id "bar"
 Plotly.newplot("bar", traceData)
