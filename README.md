@@ -3,7 +3,7 @@
 ANA GONZALEZ
 
 # Files
-* Final results are hosted on GitHub Pagses: https://vgpass.github.io/belly-button-challenge/
+* Final results are hosted on GitHub Pagses:(https://anagonz2020.github.io/Belly-Button-Challenge/)
 *In the repository are the completed challenge files.*
 
 * README.md - ReadMe file for the project.
